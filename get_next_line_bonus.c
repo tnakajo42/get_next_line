@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tnakajo <tnakajo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/13 18:55:06 by tnakajo           #+#    #+#             */
-/*   Updated: 2023/01/16 19:07:23 by tnakajo          ###   ########.fr       */
+/*   Created: 2023/01/16 19:09:08 by tnakajo           #+#    #+#             */
+/*   Updated: 2023/01/16 19:14:19 by tnakajo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 static char	*get_next_line_sub(char **str_line, char **str_buff);
 static char	*get_next_line_with_n(char **str_line, char **str_buff, int fb);
@@ -31,8 +31,6 @@ char	*get_next_line(int fd)
 	if (!str_buff)
 		return (NULL);
 	nb_read = read(fd, str_buff, BUFFER_SIZE);
-	// printf("%zi", nb_read);
-	// printf("%i", fd);
 	if (nb_read == -1)
 	{
 		free (str_buff);

@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tnakajo <tnakajo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/13 18:58:49 by tnakajo           #+#    #+#             */
-/*   Updated: 2023/01/16 17:39:14 by tnakajo          ###   ########.fr       */
+/*   Created: 2023/01/16 19:09:15 by tnakajo           #+#    #+#             */
+/*   Updated: 2023/01/16 19:11:19 by tnakajo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 int	ft_str_char(char *str, int c)
 {

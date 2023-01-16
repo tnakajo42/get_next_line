@@ -5,13 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: tnakajo <tnakajo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/16 19:09:35 by tnakajo           #+#    #+#             */
-/*   Updated: 2023/01/16 19:14:07 by tnakajo          ###   ########.fr       */
+/*   Created: 2023/01/13 18:58:45 by tnakajo           #+#    #+#             */
+/*   Updated: 2023/01/16 18:27:07 by tnakajo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_BONUS_H
-# define GET_NEXT_LINE_BONUS_H
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
 
 # include <unistd.h>
 # include <stdlib.h>

@@ -6,7 +6,7 @@
 /*   By: tnakajo <tnakajo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 20:03:11 by tnakajo           #+#    #+#             */
-/*   Updated: 2023/01/14 21:30:40 by tnakajo          ###   ########.fr       */
+/*   Updated: 2023/01/16 19:14:34 by tnakajo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,11 @@ int	main(void)
 	path = "hello.txt";
 	fd = open(path, O_RDONLY);
 	i = 0;
-	while (i < 4) // <-- number of loops
+	while (i < 5) // <-- number of loops
 	{
 		i++;
 		// str = test(fd);
+		// str = get_next_line(fd);
 		str = get_next_line(fd);
 		printf("%d. %s", i, str);
 		free(str);
@@ -54,9 +55,6 @@ int	main(void)
 	return (0);
 }
 
-#include <fcntl.h>
-#include <stdio.h>
-#include <unistd.h>
 /* 
 void	read_and_print_100(int fd)
 {
