@@ -6,11 +6,11 @@
 /*   By: tnakajo <tnakajo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 20:03:11 by tnakajo           #+#    #+#             */
-/*   Updated: 2023/01/16 19:14:34 by tnakajo          ###   ########.fr       */
+/*   Updated: 2023/01/17 22:13:43 by tnakajo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+/* #include "get_next_line.h"
 #include <stdio.h>
 #include <fcntl.h>
 
@@ -24,10 +24,10 @@ int	main(void)
 	char	*str;
 	char	*path;
 
-	path = "hello.txt";
+	path = "multiple_nl.txt";
 	fd = open(path, O_RDONLY);
 	i = 0;
-	while (i < 5) // <-- number of loops
+	while (i < 6) // <-- number of loops
 	{
 		i++;
 		// str = test(fd);
@@ -52,8 +52,9 @@ int	main(void)
 	// get_next_line(2);
 	// printf("%d\n", i);
 	// printf("%d\n", BUFFER_SIZE);
+	close(fd);
 	return (0);
-}
+} */
 
 /* 
 void	read_and_print_100(int fd)

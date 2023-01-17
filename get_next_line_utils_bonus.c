@@ -6,7 +6,7 @@
 /*   By: tnakajo <tnakajo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/16 19:09:15 by tnakajo           #+#    #+#             */
-/*   Updated: 2023/01/16 19:11:19 by tnakajo          ###   ########.fr       */
+/*   Updated: 2023/01/17 22:08:31 by tnakajo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,25 +70,6 @@ char	*ft_str_dup_a(char *str, int c)
 	}
 	return (str_dup);
 }
-
-/* char	*ft_str_dup(char *str)
-{
-	char	*str_dup;
-	size_t	i;
-
-	str_dup = (char *)malloc(sizeof(char) * ft_str_len(str) + 1);
-	if (!str_dup)
-		return (NULL);
-	i = 0;
-	while (str[i])
-	{
-		str_dup[i] = str[i];
-		i++;
-	}
-	str_dup[i] = '\0';
-	free (str);
-	return (str_dup);
-} */
 
 char	*ft_str_cat(char *str1, char *str2)
 {

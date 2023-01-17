@@ -6,15 +6,11 @@
 /*   By: tnakajo <tnakajo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/13 18:55:06 by tnakajo           #+#    #+#             */
-/*   Updated: 2023/01/16 19:07:23 by tnakajo          ###   ########.fr       */
+/*   Updated: 2023/01/17 22:10:38 by tnakajo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
-
-static char	*get_next_line_sub(char **str_line, char **str_buff);
-static char	*get_next_line_with_n(char **str_line, char **str_buff, int fb);
-static void	ft_str_free(char **str);
 
 char	*get_next_line(int fd)
 {
@@ -31,8 +27,6 @@ char	*get_next_line(int fd)
 	if (!str_buff)
 		return (NULL);
 	nb_read = read(fd, str_buff, BUFFER_SIZE);
-	// printf("%zi", nb_read);
-	// printf("%i", fd);
 	if (nb_read == -1)
 	{
 		free (str_buff);
@@ -45,11 +39,11 @@ char	*get_next_line(int fd)
 	return (get_next_line_with_n(&str_line, &str_buff, fd));
 }
 
-static char	*get_next_line_sub(char **str_line, char **str_buff)
+char	*get_next_line_sub(char **str_line, char **str_buff)
 {
 	char	*str_temp;
 	char	*str_rtrn;
-	
+
 	free (*str_buff);
 	if (ft_str_len(*str_line))
 	{
@@ -71,7 +65,7 @@ static char	*get_next_line_sub(char **str_line, char **str_buff)
 	return (*str_line);
 }
 
-static char	*get_next_line_with_n(char **str_line, char **str_buff, int fd)
+char	*get_next_line_with_n(char **str_line, char **str_buff, int fd)
 {
 	char	*str_temp;
 	char	*str_rtrn;
@@ -91,7 +85,7 @@ static char	*get_next_line_with_n(char **str_line, char **str_buff, int fd)
 	return (get_next_line(fd));
 }
 
-static void	ft_str_free(char **str)
+void	ft_str_free(char **str)
 {
 	if (*str)
 	{
@@ -146,14 +140,4 @@ int	ft_str_len(char *str)
 	}
 	else
 		return (test(fd));
-} */
-
-/* char	*get_next_line(int fd)
-{
-	char	*a;
-
-	a = (char *)malloc(5 * sizeof(char));
-	a = "test";
-	free (a);
-	return (NULL);
 } */

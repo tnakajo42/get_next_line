@@ -1,1 +1,5 @@
 0
+ft_str_dup_a
+gg
+
+fb
